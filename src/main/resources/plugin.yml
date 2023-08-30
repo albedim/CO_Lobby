@@ -1,0 +1,4 @@
+name: CO_Lobby
+version: '${project.version}'
+main: it.craftopoly.co_lobby.CO_Lobby
+api-version: 1.20
