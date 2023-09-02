@@ -46,25 +46,25 @@ public class InventoryEvent implements Listener
     {                TextComponent website = Utils.createInteractiveMessage(
             "§7Vai al nostro sito",
             ClickEvent.Action.OPEN_URL,
-            "  §8• §aSito, Store & Forum_",
+            "  §8▪ §aSito, Store & Forum_",
             CO_Lobby.getInstance().getConfig().getString("links.website")
     );
         TextComponent discord = Utils.createInteractiveMessage(
                 "§7Entra nel nostro server discord",
                 ClickEvent.Action.OPEN_URL,
-                "  §8• §aDiscord",
+                "  §8▪ §aDiscord",
                 CO_Lobby.getInstance().getConfig().getString("links.discord")
         );
         TextComponent telegram = Utils.createInteractiveMessage(
                 "§7Entra nel nostro canale telegram",
                 ClickEvent.Action.OPEN_URL,
-                "  §8• §aTelegram",
+                "  §8▪ §aTelegram",
                 CO_Lobby.getInstance().getConfig().getString("links.telegram")
         );
         TextComponent tiktok = Utils.createInteractiveMessage(
                 "§7FSeguici su tiktok",
                 ClickEvent.Action.OPEN_URL,
-                "  §8• §aTikTok",
+                "  §8▪ §aTikTok",
                 CO_Lobby.getInstance().getConfig().getString("links.tiktok")
         );
         player.spigot().sendMessage(website);

@@ -29,7 +29,7 @@ public class MenuGUI
                         (short) 1,
                         1,
                         ElementsUtils.createLore(
-                                "§8• §7Guadagna soldi e investi nelle tue proprietà",
+                                "§8▪ §7Guadagna soldi e investi nelle tue proprietà",
                                         "  §7passa alla città successiva e supera le task con gli",
                                         "  §7altri giocatori, Sei pronto a diventare il più ricco",
                                         "  §7della città? Il §a1° §7Monopoly su minecraft è arrivato!"
@@ -42,9 +42,9 @@ public class MenuGUI
                 ElementsUtils.createCustomSkull(
                         player.getName(),
                         ElementsUtils.createLore(
-                                "§8• §7Nome: §a"+user.get("username"),
-                                "§8• §7Gioca dal: §a"+ DateUtils.fixDate(user.get("created_on").getAsString()),
-                                "§8• §7Livello: §a"+user.get("level")
+                                "§8▪ §7Nome: §a"+user.get("username"),
+                                "§8▪ §7Gioca dal: §a"+ DateUtils.fixDate(user.get("created_on").getAsString()),
+                                "§8▪ §7Livello: §a"+user.get("level")
                         ),
                         "§aInfo giocatore"
                 )
@@ -56,7 +56,7 @@ public class MenuGUI
                         (short) 1,
                         1,
                         ElementsUtils.createLore(
-                                "§8• §7Premi qui se vuoi rimanere aggiornato ",
+                                "§8▪ §7Premi qui se vuoi rimanere aggiornato ",
                                         "  §7su tutti gli eventi e le novità del server!"
                         ),
                         "§aResta aggiornato"
