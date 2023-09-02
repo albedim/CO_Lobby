@@ -1,5 +1,6 @@
 package it.craftopoly.co_lobby.gui;
 
+import com.google.gson.JsonObject;
 import it.craftopoly.co_lobby.schema.User;
 import it.craftopoly.co_lobby.utils.DateUtils;
 import it.craftopoly.co_lobby.utils.ElementsUtils;
@@ -20,7 +21,7 @@ public class MenuGUI
     public void open()
     {
         Inventory inv = Bukkit.createInventory(null, 45, "§7Menu");
-        User user = HttpCall.getUser(this.player.getName());
+        JsonObject user = HttpCall.getUser(this.player.getName());
         inv.setItem(
                 20,
                 ElementsUtils.createCustomElement(
@@ -41,9 +42,9 @@ public class MenuGUI
                 ElementsUtils.createCustomSkull(
                         player.getName(),
                         ElementsUtils.createLore(
-                                "§8• §7Nome: §a"+user.getUsername(),
-                                "§8• §7Gioca dal: §a"+ DateUtils.fixDate(user.getCreatedOn()),
-                                "§8• §7Livello: §a"+user.getLevel()
+                                "§8• §7Nome: §a"+user.get("username"),
+                                "§8• §7Gioca dal: §a"+ DateUtils.fixDate(user.get("created_on").getAsString()),
+                                "§8• §7Livello: §a"+user.get("level")
                         ),
                         "§aInfo giocatore"
                 )
@@ -56,7 +57,7 @@ public class MenuGUI
                         1,
                         ElementsUtils.createLore(
                                 "§8• §7Premi qui se vuoi rimanere aggiornato ",
-                                        "  §8su tutti gli eventi e le novità del server!"
+                                        "  §7su tutti gli eventi e le novità del server!"
                         ),
                         "§aResta aggiornato"
                 )

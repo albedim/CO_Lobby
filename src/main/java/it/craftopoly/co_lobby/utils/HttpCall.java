@@ -1,16 +1,18 @@
 package it.craftopoly.co_lobby.utils;
 
-import com.google.gson.Gson;
-import it.craftopoly.co_lobby.schema.User;
+import com.google.gson.JsonObject;
 
 public class HttpCall
 {
-    public static User getUser(String username)
+    public static JsonObject getUser(String username)
     {
-        Response response = HttpRequest.get("/users/"+username);
-        if(response == null)
-            return new User();
-        return new Gson().fromJson(response.getParam().toString(), User.class);
+        JsonObject response = HttpUtils.get(
+                "/users/"+username,
+                null,
+                JsonObject.class
+        ).getAsJsonObject();
+
+        return response.get("param").getAsJsonObject();
     }
 }
 

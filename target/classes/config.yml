@@ -6,3 +6,6 @@ links:
 
 messages:
  follow_social: §a§lCRAFTOPOLY__§8▪ §7Hey §a{username}§7, Ti ricordiamo di seguirci su tutti i nostri_  §7social media per rimanere aggiornato sugli eventi e_  §7le novità del server!__
+
+settings:
+ api_url: http://localhost:5000/api/v1
