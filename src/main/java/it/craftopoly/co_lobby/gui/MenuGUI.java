@@ -42,7 +42,7 @@ public class MenuGUI
                 ElementsUtils.createCustomSkull(
                         player.getName(),
                         ElementsUtils.createLore(
-                                "§8▪ §7Nome: §a"+user.get("username"),
+                                "§8▪ §7Nome: §a"+user.get("username").getAsString(),
                                 "§8▪ §7Gioca dal: §a"+ DateUtils.fixDate(user.get("created_on").getAsString()),
                                 "§8▪ §7Livello: §a"+user.get("level")
                         ),
