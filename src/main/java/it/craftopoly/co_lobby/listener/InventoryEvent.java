@@ -23,20 +23,26 @@ public class InventoryEvent implements Listener
         if(player == null)
             return;
 
-        if(e.getView().getTitle().equals("§7Menu"))
-        {
+        if(it.craftopoly.co_lobby.listener.Utils.isInLobby(player)){
+
+            if(e.getCurrentItem() == null)
+                return;
+
             if(e.getCurrentItem().getType().equals(Material.LIME_STAINED_GLASS_PANE))
             {
                 player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 300, 300);
                 player.sendMessage("§8-------------------------------------");
-                Utils.sendMessage(
-                        player,
+                player.sendMessage(
                         CO_Lobby.getInstance().getConfig().getString("messages.follow_social")
                                 .replace("{username}", player.getName())
                 );
                 sendInteractiveMessages(player);
                 player.sendMessage("§8-------------------------------------");
                 e.getView().close();
+
+            }else{
+                e.setCancelled(true);
+                return;
             }
             e.setCancelled(true);
         }

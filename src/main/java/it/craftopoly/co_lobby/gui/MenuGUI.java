@@ -15,7 +15,6 @@ public class MenuGUI
 {
     private Player player;
 
-
     public MenuGUI(Player player) { this.player = player; }
 
     public void open()

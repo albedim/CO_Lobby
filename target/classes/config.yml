@@ -1,11 +1,19 @@
 links:
- website: https://craftopoly.it
- discord: https://discord.com/gg/aaaaa
- telegram: https://t.me/craftopoly
- tiktok: https://tiktok.com/craftopoly
+ website: "https://craftopoly.it"
+ discord: "https://discord.com/gg/aaaaa"
+ telegram: "https://t.me/craftopoly"
+ tiktok: "https://tiktok.com/craftopoly"
 
 messages:
- follow_social: §a§lCRAFTOPOLY__§8▪ §7Hey §a{username}§7, Ti ricordiamo di seguirci su tutti i nostri_  §7social media per rimanere aggiornato sugli eventi e_  §7le novità del server!__
+ follow_social: "§a§lCRAFTOPOLY\n\n\n§8▪ §7Hey §a{username}§7, Ti ricordiamo di seguirci su tutti i nostri\n  §7social media per rimanere aggiornato sugli eventi e\n  §7le novità del server!\n\n"
+
+lobby:
+ min_x: -25
+ max_x: -18
+ min_z: 135
+ max_z: 145
+ y: 70
+
 
 settings:
  api_url: http://localhost:5000/api/v1
