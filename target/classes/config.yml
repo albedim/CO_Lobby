@@ -7,6 +7,13 @@ links:
 messages:
  follow_social: "§a§lCRAFTOPOLY\n\n\n§8▪ §7Hey §a{username}§7, Ti ricordiamo di seguirci su tutti i nostri\n  §7social media per rimanere aggiornato sugli eventi e\n  §7le novità del server!\n\n"
 
+bcs: [
+  "sgsdgsdg",
+  "esfsafasfsa"
+ ]
+
+bcs_time: 500
+
 lobby:
  min_x: -25
  max_x: -18
